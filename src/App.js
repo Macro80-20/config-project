@@ -5,7 +5,7 @@ import { Buttons } from './Components/Form';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-headerr">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <Buttons/>
