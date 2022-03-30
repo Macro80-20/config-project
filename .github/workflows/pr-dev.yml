@@ -1,14 +1,11 @@
-name: SonarCloud
+name: PR Development
 on:
-  push:
-    branches:
-      - main
-      - master
-      - feature
   pull_request:
-    types: [opened, synchronize, reopened]
+   types: [opened, synchronize, reopened ,review_requested]
+   branches:
+      - development
 jobs:
-  sonarcloud:
+ sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
     steps:
@@ -20,3 +17,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: ConsoleLog
+        run: echo 'Pull request to Dev made'

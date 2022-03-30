@@ -1,0 +1,11 @@
+name: PR Master
+on:
+  pull_request:
+   types: [opened, synchronize]
+   branches:
+      - master
+jobs:
+  write-to-console:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Pull request with master as the base branch'

@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { Buttons } from './Components/Form';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-headerr">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <Buttons/>
         </p>
         <a
           className="App-link"
@@ -15,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Reactttttttttt
         </a>
       </header>
     </div>
