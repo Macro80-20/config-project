@@ -12,5 +12,6 @@ jobs:
   deploy: 
    needs: tests
    runs-on: ubuntu-latest
+   if: always()
    steps:
       - run: echo 'deploying'
