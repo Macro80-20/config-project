@@ -1,4 +1,4 @@
-name: Development push 
+name: Development
 on: 
  push:
   branches:
@@ -8,4 +8,4 @@ jobs:
     name: Deploy to INT 
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Dev branch deploying to INT'
+      - run: echo 'Developement is deploying to INT'

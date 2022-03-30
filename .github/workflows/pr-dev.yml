@@ -1,4 +1,4 @@
-name: Development pull
+name: Development
 on:
   pull_request:
    types: [opened, synchronize, reopened ,review_requested]
@@ -6,7 +6,7 @@ on:
       - development
 jobs:
   write-to-console:
-    name: Write to console
+    name: Development PR 
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Pull request with Dev as the base branch'
+      - run: echo 'Pull request to Dev made'

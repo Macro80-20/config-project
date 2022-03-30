@@ -1,4 +1,4 @@
-name: Master pull
+name: Master
 on:
   pull_request:
    types: [opened, synchronize]
@@ -6,7 +6,7 @@ on:
       - master
 jobs:
   write-to-console:
-    name: PR raised for master 
+    name: Master PR 
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Pull request with master as the base branch'
