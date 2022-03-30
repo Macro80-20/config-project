@@ -1,5 +1,3 @@
-import './App.css';
-
 export const Buttons = () => {
 
     const handleOnClick = () => {
