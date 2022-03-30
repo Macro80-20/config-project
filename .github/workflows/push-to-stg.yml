@@ -1,4 +1,4 @@
-name: merge dev to master 
+name: Deploy master to STG 
 on: 
  push:
   branches:
