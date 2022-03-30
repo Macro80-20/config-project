@@ -1,0 +1,11 @@
+name: Feature push 
+on: 
+ push:
+  branches:
+  - development
+jobs:
+  write-to-console:
+    name: Deploy to INT 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Dev branch deploying to INT'
