@@ -1,0 +1,13 @@
+name: Feature
+on: 
+ push:
+  branches-ignore:
+  - master
+  - main
+  - development
+jobs:
+  write-to-console:
+    name: new changes
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Push to feature branch!'
