@@ -9,4 +9,4 @@ jobs:
     name: Write to console
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Hello world!'
+      - run: echo 'Pull request with Dev as the base branch'
