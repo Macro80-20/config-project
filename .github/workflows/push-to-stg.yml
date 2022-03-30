@@ -1,11 +1,16 @@
-name: Master merge
+name: Deploy master to STG 
 on: 
  push:
   branches:
   - master
 jobs:
-  write-to-console:
-    name: Deploy to STG 
+  tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Master is deploying to STG'
+      - run: echo 'Running tests'
+  
+  deploy: 
+   needs: tests
+   runs-on: ubuntu-latest
+   steps:
+      - run: echo 'deploying'

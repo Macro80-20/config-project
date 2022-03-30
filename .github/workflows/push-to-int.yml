@@ -1,11 +1,16 @@
-name: Dev merge
+name: Deploy dev to INT
 on: 
  push:
   branches:
   - development
 jobs:
-  write-to-console:
-    name: Deploy to INT 
+  tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Developement is deploying to INT'
+      - run: echo 'Running tests'
+  
+  deploy: 
+   needs: tests
+   runs-on: ubuntu-latest
+   steps:
+      - run: echo 'deploying'
