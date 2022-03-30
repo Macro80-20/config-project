@@ -1,4 +1,4 @@
-name: Master
+name: PR Master
 on:
   pull_request:
    types: [opened, synchronize]
