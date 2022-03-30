@@ -6,7 +6,7 @@ export const Buttons = () => {
   return (
     <>
     <button onClick={handleOnClick} >
-        Help me
+        Help meeeee
     </button>
     </>
   );
