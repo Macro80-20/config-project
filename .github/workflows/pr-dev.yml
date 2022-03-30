@@ -1,4 +1,4 @@
-name: Development
+name: PR Development
 on:
   pull_request:
    types: [opened, synchronize, reopened ,review_requested]
