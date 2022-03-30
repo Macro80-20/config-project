@@ -6,7 +6,6 @@ on:
       - master
 jobs:
   write-to-console:
-    name: Master PR 
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Pull request with master as the base branch'

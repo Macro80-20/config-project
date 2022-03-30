@@ -6,7 +6,6 @@ on:
       - development
 jobs:
   write-to-console:
-    name: Development PR 
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Pull request to Dev made'
