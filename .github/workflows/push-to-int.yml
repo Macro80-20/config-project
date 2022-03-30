@@ -1,4 +1,4 @@
-name: Deploy Alpian dev --> INT
+name: Deploy dev to INT
 on: 
  push:
   branches:

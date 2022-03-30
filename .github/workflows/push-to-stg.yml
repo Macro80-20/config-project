@@ -1,4 +1,4 @@
-name: Deploy ALpian master --> STG
+name: Deploy master to STG 
 on: 
  push:
   branches:
