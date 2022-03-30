@@ -1,4 +1,4 @@
-name: Merge feature to dev
+name: Deploy dev to INT
 on: 
  push:
   branches:
