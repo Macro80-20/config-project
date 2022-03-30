@@ -1,4 +1,4 @@
-name: Feature push 
+name: Feature
 on: 
  push:
   branches-ignore:
@@ -7,7 +7,6 @@ on:
   - development
 jobs:
   write-to-console:
-    name: Write to console
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Pushed changes on feature branch!'
+      - run: echo 'Push to feature branch!'
