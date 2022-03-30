@@ -1,4 +1,4 @@
-name: Development push 
+name: Master push 
 on: 
  push:
   branches:
