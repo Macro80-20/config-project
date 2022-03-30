@@ -4,8 +4,13 @@ on:
   branches:
   - development
 jobs:
-  write-to-console:
-    name: Deploy to INT 
+  tests:
+    name: Jest
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Developement is deploying to INT'
+      - run: echo 'Running tests'
+  
+  deploy: 
+   name: Deploying to int
+   needs: tests
+   runs-on: ubuntu-latest

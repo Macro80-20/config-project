@@ -4,8 +4,13 @@ on:
   branches:
   - master
 jobs:
-  write-to-console:
-    name: Deploy to STG 
+  tests:
+    name: Jest
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Master is deploying to STG'
+      - run: echo 'Running tests'
+  
+  deploy: 
+   name: Deploying to stg
+   needs: write-to-console
+   runs-on: ubuntu-latest
