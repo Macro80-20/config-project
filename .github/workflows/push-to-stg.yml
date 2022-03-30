@@ -5,12 +5,10 @@ on:
   - master
 jobs:
   tests:
-    name: Jest
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Running tests'
   
   deploy: 
-   name: Deploying to stg
-   needs: write-to-console
+   needs: tests
    runs-on: ubuntu-latest

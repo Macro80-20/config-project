@@ -6,7 +6,6 @@ on:
       - development
 jobs:
  tests:
-    name: Run tests
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Pull request to Dev made'

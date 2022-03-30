@@ -5,12 +5,10 @@ on:
   - development
 jobs:
   tests:
-    name: Jest
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Running tests'
   
   deploy: 
-   name: Deploying to int
    needs: tests
    runs-on: ubuntu-latest
