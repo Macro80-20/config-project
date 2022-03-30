@@ -1,4 +1,4 @@
-name: Dev merge
+name: Merge feature to dev
 on: 
  push:
   branches:

@@ -1,4 +1,4 @@
-name: Master merge
+name: merge dev to master 
 on: 
  push:
   branches:
