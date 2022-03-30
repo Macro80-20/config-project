@@ -1,0 +1,11 @@
+name: Master push 
+on: 
+ push:
+  branches:
+  - master
+jobs:
+  write-to-console:
+    name: Deploy to STG 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Master is deploying to STG'
