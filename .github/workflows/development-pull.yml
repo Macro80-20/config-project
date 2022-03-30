@@ -1,0 +1,12 @@
+name: Development pull
+on:
+  pull_request:
+   types: [opened, synchronize, reopened ,review_requested]
+   branches:
+      - development
+jobs:
+  write-to-console:
+    name: Write to console
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Hello world!'

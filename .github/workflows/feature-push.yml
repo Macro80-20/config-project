@@ -1,0 +1,13 @@
+name: Feature push 
+on: 
+ push:
+  branches-ignore:
+  - master
+  - main
+  - development
+jobs:
+  write-to-console:
+    name: Write to console
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Hello world!'
