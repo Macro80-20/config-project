@@ -6,7 +6,7 @@ on:
       - development
 jobs:
  branch_name:
-  name: Branch name
+  name: Branch name convention
   runs-on: ubuntu-latest
   steps:
    - uses: deepakputhraya/action-pr-title@master
