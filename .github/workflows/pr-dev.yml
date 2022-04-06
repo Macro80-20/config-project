@@ -4,7 +4,6 @@ on:
    types: [opened, synchronize, reopened ,edited,review_requested]
    branches:
       - development
-    branches
 jobs:
  branch_name:
   name: Branch name convention
@@ -22,8 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Pull request to Dev made'
-       
-
  sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
